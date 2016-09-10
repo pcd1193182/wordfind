@@ -7,5 +7,5 @@ $ java -jar dist/wordfind.jar src/word.list 4 4 serspatglinesers | shasum
 $ java -jar dist/wordfind.jar ~/word.list 4 4 "se spatglin se s" | shasum
 318df4aa741efed4a8488cb2bbb1437c77d3e359  -
 $ java -jar dist/wordfind.jar ~/word.list 5 5 rsclsdeiaegntrpiaesolmidc | shasum
-???
+25f4e8c993230707ec7b65ed0a2a457d106681aa -
 ```

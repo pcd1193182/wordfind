@@ -17,7 +17,7 @@ import board.Path;
 import board.Square;
 import board.SquareImpl;
 import dict.Dictionary;
-import dict.HashDict;
+import dict.TrieDict;
 import board.ArrayBoard;
 import board.ListPath;
 
@@ -107,7 +107,7 @@ public class Wordfind {
 	}
 
 	private static Dictionary createDictionary(String string) throws IOException {
-		Dictionary d = new HashDict();
+		Dictionary d = new TrieDict();
 		try (BufferedReader br = new BufferedReader(new FileReader(string))) {
 			for (String line; (line = br.readLine()) != null; ) {
 				d.addWord(line);
