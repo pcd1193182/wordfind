@@ -74,6 +74,14 @@ public class Wordfind {
 			width = Integer.parseInt(args[1]);
 			height = Integer.parseInt(args[2]);
 			letters = args[3];
+			if (letters.contains("/")) {
+				try (BufferedReader br = new BufferedReader(new FileReader(letters))) {
+					letters = br.readLine();
+				} catch (FileNotFoundException e) {
+					usage("Missing board file");
+					return;
+				}
+			}
 		} else {
 			usage("Invalid number of arguments");
 			return;
