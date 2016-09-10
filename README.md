@@ -1,2 +1,2 @@
-# wordfind
-Tool to solve boggle-like  board games
+# Wordfind
+This repository contains a tool to solve boggle-like board games.
