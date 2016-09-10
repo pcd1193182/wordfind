@@ -13,3 +13,7 @@ dist/
 hs_err_pid*
 *~
 /bin/
+.classpath
+.project
+java.hprof.txt
+traces.txt
